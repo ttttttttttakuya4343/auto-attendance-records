@@ -19,25 +19,56 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
 
 # 仮想環境
 venv/
 env/
 ENV/
+.venv/
+env.bak/
+venv.bak/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# 出力ファイル
-*.xlsx
-!data/template/*.xlsx
+# mypy
+.mypy_cache/
+.dmypy.json
+dmyp.json
+
+# Project specific
+data/csv/*.csv
+data/template/*.xlsx
+data/output/*.xlsx
+!data/csv/.gitkeep
+!data/template/.gitkeep
+!data/output/.gitkeep
+
+# Temporary files
+temp_*.csv
+temp_*.xlsx
+debug.txt
 
 # ログファイル
 *.log
